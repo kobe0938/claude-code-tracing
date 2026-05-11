@@ -50,7 +50,7 @@ export ANTHROPIC_CUSTOM_HEADERS="x-litellm-api-key: Bearer <key>"
 We adopted this design after evaluating several alternatives that did not meet our requirements during the study period: `claude-trace`, LangSmith, `claude-code-proxy`, MLflow's Claude auto-logger (which produced empty input/output fields), and LiteLLM with the Langfuse callback (incompatible SDK versions). The custom JSONL callback is the smallest configuration that captures the full request body with no information loss.
 
 ## Automation Pipeline
-A driver script (`pipeline_tmux.py`) executes tasks sequentially, one at a time. For each task `i`:
+A driver script (`scripts/pipeline_tmux.py`) executes tasks sequentially, one at a time. For each task `i`:
 
 1. **Reset.** Delete the previous workspace and truncate `traces.jsonl`, so the next run is captured in isolation.
 2. **Workspace setup.** `git clone` the task's repository, `git checkout base_commit`, and write `problem_statement` to `problem_statement.md` in the repository root.
