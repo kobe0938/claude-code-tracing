@@ -22,8 +22,8 @@ PROBLEM_FILE = BASE_DIR / "problem_statement.md"
 CLAUDE_BIN = "/Users/kobe/.local/bin/claude"
 
 TRACE_SOURCE = Path("/Users/kobe/Desktop/lmcache-agent-trace/claudecode/traces.jsonl")
-TRACE_RAW_DIR = Path("/Users/kobe/Desktop/claude-code-tracing/swe-bench-pro/trail_3/raw")
-TRACE_PARSED_DIR = Path("/Users/kobe/Desktop/claude-code-tracing/swe-bench-pro/trail_3/parsed")
+TRACE_RAW_DIR = Path("/Users/kobe/Desktop/claude-code-tracing/swe-bench-pro/raw")
+TRACE_PARSED_DIR = Path("/Users/kobe/Desktop/claude-code-tracing/swe-bench-pro/parsed")
 PARSE_SCRIPT = Path("/Users/kobe/Desktop/lmcache-agent-trace/claudecode/parse_traces_raw_request.py")
 
 TMUX_SESSION = "claude_agent"
